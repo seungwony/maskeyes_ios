@@ -34,7 +34,7 @@
 	<key>FirebaseScreenReportingEnabled</key>
 	<false/>
 	<key>GADApplicationIdentifier</key>
-	<string>ca-app-pub-6930055600634279~7524907003</string>
+	<string>ca-app-pub-6930055600634279~7954730965</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NMFClientId</key>
@@ -69,6 +69,10 @@
 			</array>
 		</dict>
 	</dict>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

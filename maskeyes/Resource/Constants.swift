@@ -9,7 +9,7 @@
 import Foundation
 struct Constants {
     static let share_group_backup = "group.giftree.co.ormaa"
-    static let share_group = "group.giftree.maskeyes"
+    static let share_group = "group.co.giftree.maskeyes"
     static let latitude = "latitude"
     static let longitude = "longitude"
     static let lastKnownLatitude = "lastKnownLatitude"

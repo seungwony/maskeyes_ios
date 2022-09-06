@@ -78,25 +78,13 @@ class ApiHelper {
                                     }else{
                                         tmpStores.append(maskStore)
                                     }
-                                    
-                                    
-                                    
                                 }
-                            
-                            
-                            
-                            
-                           
                             }
-                        
-                        
                        }
-                       
                         delegate.succ(stores: tmpStores)
                        
                     break
-                                       
-                                   
+                                  
                    case .failure(let error):
                                        
                     print("error : \(error)")
@@ -185,8 +173,12 @@ class ApiHelper {
                         print("error : \(error)")
                         delegate.failed(error: error.localizedDescription)
                                        
+                    
+                       
                     }
-                }
+                
             }
+            
+    }
     
 }

@@ -52,6 +52,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Ask for Authorisation from the User.
 //         bannerView = GADBannerView(adSize: kGADAdSizeBanner)
 //        bannerView.center = CGPoint(x: adView.frame.width / 2, y: 0)
@@ -62,7 +63,7 @@ class ViewController: UIViewController {
         
         bannerView.adSize = kGADAdSizeBanner
 //        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
-      bannerView.adUnitID = "ca-app-pub-6930055600634279/3680837243"
+      bannerView.adUnitID = "ca-app-pub-6930055600634279/6359605933"
       bannerView.rootViewController = self
         bannerView.delegate = self
         
@@ -330,7 +331,6 @@ class ViewController: UIViewController {
           popup.addButtons([kakaomapButton, googlemapButton, confirmButton])
         
         
-          
         if let viewC = popup.viewController as? StoreInfoViewController {
             viewC.nameLabel.text = store.name
                    
@@ -458,10 +458,7 @@ class ViewController: UIViewController {
         let case1 = UIAlertAction(title: "재고 있음(자료없음 제외) > 가까운 순", style: .default, handler: {(cAlertAction) in
             
             DataHelper.saveSmartWidgetOption(option:0)
-                       
-                       
-              
-                       
+                      
             self.priorityLabel.text = DataHelper.smartWidgetOrderStr(option:Constants.smartWidgetOrder)
                 
             })
